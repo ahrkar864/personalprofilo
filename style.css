@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.intro {
+    height: 100vh;
+}
+
+.intro video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.intro h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+section {
+    height: 100vh;
+    color: black;
+}
+
+section h1 {
+    padding-top: 300px;
+    text-align: center;
+    font-size: 80px;
+}
+
+
+/* boxes section */
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #000;
+}
+
+.i-box {
+    margin: 30px;
+    text-align: center;
+    width: 60vh;
+    height: max-content;
+    background-color: #000;
+    padding: 5px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.i-box h3 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 5px;
+    font-size: 25px;
+}
+
+.i-box p {
+    text-align: justify;
+    line-height: normal;
+    word-spacing: 0.5px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.i-box a {
+    text-decoration: none;
+    color: rgb(243, 109, 0);
+}
+
+.i-box section {
+    /* width: 35vh; */
+    height: max-content;
+    margin-bottom: 10px;
+}
+
+.i-box img {
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+    align-self: flex-end;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    margin: 0 auto 0 auto;
+    transform-origin: bottom;
+}
+
+.bounce-1 {
+    animation-name: bounce-1;
+    animation-timing-function: ease;
+}
+
+@keyframes bounce-1 {
+    0% {
+        transform: scale(1, 1) translateY(0);
+    }
+    10% {
+        transform: scale(1.1, .9) translateY(0);
+    }
+    30% {
+        transform: scale(.9, 1.1) translateY(-10px);
+    }
+    50% {
+        transform: scale(1, 1) translateY(0);
+    }
+    57% {
+        transform: scale(1, 1) translateY(-7px);
+    }
+    64% {
+        transform: scale(1, 1) translateY(0);
+    }
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
+}
+
+.e {
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+}
+
+.nav {
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    /* margin: 20px; */
+    padding: 20px;
+    text-decoration: none;
+}
+
+.nav button {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #fff;
+    color: #000;
+}
+
+.nav button:hover {
+    font-weight: bold;
+    background-color: #000;
+    color: #fff;
+}
+
+
+/* footer */
+
+.footer {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #000;
+    justify-content: center;
+}
+
+.footer p {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+
+/* loader */
+
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #Fff;
+    animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(180deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader-inner {
+    0% {
+        height: 0%;
+    }
+    25% {
+        height: 0%;
+    }
+    50% {
+        height: 100%;
+    }
+    75% {
+        height: 100%;
+    }
+    100% {
+        height: 0%;
+    }
+}
+
+
+/* footer */
+
+.footer {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #000;
+    justify-content: center;
+}
+
+.footer p {
+    color: #fff;
+    margin-bottom: 20px;
+    margin-top: 10%;
+    justify-content: baseline;
+}

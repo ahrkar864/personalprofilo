@@ -1,0 +1,114 @@
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>Ahrkar Kyaw | Home</title>
+    <meta http-equiv="x-ua-compatible" name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
+    <link data-react-helmet="true" rel="icon" type="image/png" href="media/CC_20220215_215143.png">
+    <link rel="stylesheet" href="portfolio.css">
+
+</head>
+
+<!--aleart message -->
+
+
+<!-- alert message end -->
+
+<body onload="loadfun()">
+    <div class="hero">
+        <div id='stars'></div>
+        <div id='stars2'></div>
+        <div id='stars3'></div>
+
+        <!-- nav -->
+        <div class="nav">
+            <ul class="menu">
+                <li> <i class="fa fa-home" aria-hidden="true"></i>&nbsp Home </li>
+                <a href="aboutme.html" style="text-decoration: none;">
+                    <li> <i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp About Me </li>
+                </a>
+            </ul>
+        </div>
+        <!-- nav. end here -->
+
+        <!-- body -->
+        <div class="main-frame">
+            <div class="profilepic">
+                <img src="media/IMG_20180325_222630_507.jpg">
+            </div>
+            <div class="body">
+                <header>Ahrkar Kyaw</header><br>
+            </div>
+
+            <div class="coup">
+                <a href="https://www.youtube.com/watch?v=sJVIE1hueS4" data-hover="#WhatsHappeningInMyanmar" target="blank">
+
+                </a><span>#WhatsHappeningInMyanmar</span>
+            </div>
+
+            <spam class="flag">
+
+                <head>A Web Developer from Yangon, Myanmar
+                    <img src="media/mmr.svg">
+                </head>
+            </spam>
+
+
+            <div class="icon">
+                <a href="https://github.com/ahrkar864" style="text-decoration: none;" target="blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/ahrkar-kyaw-0a689722b/" style="text-decoration: none;" target="blank"><i class=" fa fa-linkedin-square " aria-hidden="true "></i></a>
+                <a href="https://www.facebook.com/Ahrkarkyaw1022/" style="text-decoration: none;" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/stories/ahrkar_kyaw_10/" style="text-decoration: none;" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                
+            </div>
+
+
+            <div id="overlay" class=""></div>
+            <div class="weather">
+                <a class="weatherwidget-io" style="border-radius: 5px; width: 800px; display: flex; justify-content: center; left: 6%;" href="https://forecast7.com/en/16d8796d20/yangon/" data-label_1="YANGON" data-label_2="WEATHER Forecast" data-icons="Climacons Animated"
+                    data-theme="original" data-basecolor="rgba(0,0,0,0)" data-accent="rgba(0, 0, 0)">YANGON WEATHER Forecast</a>
+                <script>
+                    ! function(d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (!d.getElementById(id)) {
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src = 'https://weatherwidget.io/js/widget.min.js';
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }
+                    }(document, 'script', 'weatherwidget-io-js');
+                </script>
+
+                <script type="text/javascript">
+                    if (window.history.replaceState) {
+                        window.history.replaceState(null, null, window.location.href);
+                    }
+                </script>
+            </div>
+        </div>
+
+        <!--    loader      -->
+        <div class="loader-wrapper" id="loading">
+            <span class="loader"><span class="loader-inner"></span></span>
+        </div>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            var load = document.getElementById("loading");
+
+            function loadfun() {
+                load.style.display = 'none';
+            }
+        </script>
+        <!-- end of loader -->
+
+        <script src="button.js"></script>
+
+    </div>
+</body>
+<footer>
+    &copyCopyRight 2022 Ahrkar Kyaw.dev All Rights Reserved  ph: 09250150528
+</footer>
+
+</html>
